@@ -21,11 +21,11 @@ const MainContainer = () => {
 
 
   return (
-    <div>
+    <div className="pt-[35%] bg-black md:pt-0">
         <VedioTitle  title = {original_title} overview = {overview} />
         <VedioBackground movieId = {id} />
     </div>
   )
 }
 
-export default MainContainer
+export default MainContainer;

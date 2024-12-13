@@ -42,6 +42,15 @@
 - GPT search bar
 - (Bonsus feature) build the multi Lingual page
 - Integrate GPT APIs
+-Get Open Ai Api key
+-Gpt serach Api call
+-fetch gpt movies suggestions from tmdb
+-create gptslice added data
+-Resused movie List component to make movie suggestion container
+-memoization
+-addeding .env file 
+-addeding .env file to gitignore
+-made our site responsive 
 
 
 
