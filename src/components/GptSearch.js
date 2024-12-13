@@ -6,7 +6,7 @@ import { BGIMG } from "../utils/constants";
 function GptSearch() {
   return (
     <div>
-        <div className="absolute -z-10">
+        <div className="fixed -z-10">
                 <img src= {BGIMG} 
                 alt="bgImg"
                 ></img>
