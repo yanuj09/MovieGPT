@@ -144,7 +144,7 @@ const Login = () =>{
                 className="p-4 my-3 bg-black  w-full border rounded-lg text-white"
                 ></input>
 
-                <input type="text" 
+                <input type="password" 
                 ref={password}
                 placeholder="Password"
                 className="p-4 my-3 bg-black w-full border rounded-lg text-white"

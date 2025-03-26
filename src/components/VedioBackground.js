@@ -2,18 +2,18 @@
 import { useSelector } from "react-redux";
 import useMovieTrailer from "../Custom hooks/useMovieTrailer";
 
-
+ 
 const VedioBackground = ({ movieId }) => {
   
   const trailerVedio = useSelector(store  => store?.movies?.trailerVedio);
 
   // getting movie triler vedio
   useMovieTrailer(movieId);
-  
+   
   
 
   return (
-    <div className="">
+    <div>
       <iframe
         className=" w-screen aspect-video"
         src= {"https://www.youtube.com/embed/" + trailerVedio?.key + "?&autoplay=1&mute=1"}

@@ -6,7 +6,7 @@ import { useEffect } from "react";
 
 const useMovieTrailer = (movieId) =>{
     const dispatch = useDispatch(); // dispatching the trailer vedio
-    const trailerVedio = useSelector(store => store.movies.trailerVedio)
+    const trailerVedio = useSelector(store => store.movies.trailerVedio);
    
   
   // api call to get he movie vedio

@@ -24,6 +24,8 @@ const GptSearchBar = () => {
   const handleGptSearchClick = async () => {
     //console.log(searchText.current.value);
 
+    //const gptMovies = ["Mirzapur", "Sacred Games", "Panchayat", "The Family Man", "Aspirants"];
+
     const gptMovies = ["Andaz Apna Apna", "Hera Pheri" , "Chupke Chupke" , "Chalti ka naam gaadi " , "Amar Akbar Anthony"];
     //console.log(gptMovies);
 
@@ -56,12 +58,12 @@ const GptSearchBar = () => {
     */
 
     const promiseArray = gptMovies.map((movie) => searchMovieTMDB(movie));
-    console.log(promiseArray);
+    //console.log(promiseArray);
     //[promise, promise,promise,promise,promise]
 
     const tmdbResults = await Promise.all(promiseArray);
-    console.log(tmdbResults);
-    dispatch(addGptMoviesResult({movieName : gptMovies  ,movieResults :tmdbResults}));
+    //console.log(tmdbResults);
+    dispatch(addGptMoviesResult({movieName : gptMovies  ,movieResults :tmdbResults})); 
   };
 
   return (
